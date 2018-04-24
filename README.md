@@ -29,20 +29,8 @@ This will fetch and parse the entire blockchain.
 Configuration file: `/conf.json`
 
 Basic settings:
-// TODO: FIX THIS
 ```json
 {
-    "gethPort": 8545, 
-    // "blocks": [ {"start": 2000000, "end": "latest"}],
-    "quiet": false,
-    "terminateAtExistingDB": false,
-    "listenOnly": false,
-    "settings": {
-        "symbol": "ETC",
-        "name": "Ethereum Classic",
-        "title": "Ethereum Classic Block Explorer",
-        "author": "Elaine"
-    },
     "nodeAddr":     "localhost",
     "gethPort":     8545,
     "startBlock":   0,
@@ -50,8 +38,16 @@ Basic settings:
     "quiet":        true,
     "syncAll":      true,
     "patch":        false,
-    "patchBlocks":  0  
-  }
+    "patchBlocks":  0,
+    "terminateAtExistingDB": false,
+    "listenOnly": false,
+    "settings": {
+        "symbol": "ETC",
+        "name": "Ethereum Classic",
+        "title": "Ethereum Classic Block Explorer",
+        "author": "Elaine"
+    }
+}
 ```
 
 ```nodeAddr```    Your node API RPC address.
